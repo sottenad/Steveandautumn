@@ -1,3 +1,4 @@
+
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
@@ -96,34 +97,84 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+@font-face {
+    font-family: 'TransatText';
+    src: url("../fonts/transat-text-standard.eot");
+    src: url("../fonts/transat-text-standard.eot?#iefix") format("embedded-opentype"),url("../fonts/transat-text-standard.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 body{
-	background: url(../img/body.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	font-family:"TransatText", "Avenir", "Helvetica Neue", helvetica, sans-serif
 }
 
-div {
+nav{
+	position: fixed;
+	top:0;
+	left:0;
+}
+.fullwidth{
+	width:100%;
+	z-index: 2;
+	position: relative;
+	background: #fff;
+}
+
+.home .content{
+	position: absolute;
+	z-index: 2;
 	text-align: center;
-
-	
 }
-img{
-	height:659px;
-	width:471px;
-	margin:80px auto;
-	box-shadow: 0 0 10px #666;
-	border-radius:10px;
+.home .content h1{
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: 1.5s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 1.5s;
+	color:#fff;
+	text-shadow: 0 0 3px #333;
+	font-size: 50px;
+}
+.home .content h3{
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: 2.5s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 2.5s;
+	color:#fff;
+	text-shadow: 0 0 3px #333;
+	font-size: 30px;
+
+}
+.home .content h2{
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: 3s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 3s;
+	color:#fff;
+	text-shadow: 0 0 3px #333;
+	font-size: 40px;
+}
+.home .content p{
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: 4s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 4s;
+	color:#fff;
+	text-shadow: 0 0 3px #333;
+	font-size: 20px;
 }
 
-
-
-
-
+.home video{
+	min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto;
+	position: fixed;
+	z-index: 1;
+	top:0;
+	left:0;
+}
 
 
 
